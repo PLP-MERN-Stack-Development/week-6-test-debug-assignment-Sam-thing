@@ -3,7 +3,7 @@
 import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Button from '../../components/Button';
+import Button from '../../../components/Button';
 
 describe('Button Component', () => {
   // Test rendering
@@ -13,6 +13,7 @@ describe('Button Component', () => {
     
     expect(button).toBeInTheDocument();
     expect(button).toHaveClass('btn-primary');
+
     expect(button).not.toBeDisabled();
   });
 
